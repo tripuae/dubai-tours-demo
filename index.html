@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Premium Tours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .tour-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .tour-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dubai Premium Tours</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h2>Experience Luxury in Dubai</h2>
+            <p>Discover the magic of Dubai with our premium guided tours</p>
+        </section>
+        
+        <section id="tours">
+            <h2>Our Popular Tours</h2>
+            <div class="tour-grid">
+                <div class="tour-card">
+                    <h3>Desert Safari</h3>
+                    <p>Experience the thrill of desert adventures</p>
+                </div>
+                <div class="tour-card">
+                    <h3>City Landmarks</h3>
+                    <p>Visit iconic Dubai attractions</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Dubai Premium Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>
