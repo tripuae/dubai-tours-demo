@@ -33,6 +33,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+            margin-bottom: 100px;
         }
         .tour-grid {
             display: grid;
@@ -44,6 +45,37 @@
             border: 1px solid #ddd;
             padding: 1rem;
             border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #2c5282;
+            font-weight: bold;
+        }
+        .testimonials {
+            margin: 4rem 0;
+            padding: 2rem;
+            background: #f0f0f0;
+            border-radius: 8px;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
         footer {
             background-color: #1a1a1a;
@@ -63,6 +95,8 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#tours">Tours</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -79,13 +113,47 @@
             <div class="tour-grid">
                 <div class="tour-card">
                     <h3>Desert Safari</h3>
-                    <p>Experience the thrill of desert adventures</p>
+                    <p>Experience the thrill of desert adventures including dune bashing, camel riding, and a BBQ dinner under the stars.</p>
+                    <p class="price">From AED 350</p>
                 </div>
                 <div class="tour-card">
                     <h3>City Landmarks</h3>
-                    <p>Visit iconic Dubai attractions</p>
+                    <p>Visit iconic Dubai attractions including Burj Khalifa, Dubai Mall, and Palm Jumeirah.</p>
+                    <p class="price">From AED 450</p>
+                </div>
+                <div class="tour-card">
+                    <h3>Yacht Experience</h3>
+                    <p>Luxury yacht cruise along Dubai Marina and JBR with refreshments and water activities.</p>
+                    <p class="price">From AED 699</p>
                 </div>
             </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-card">
+                <p>"An unforgettable experience! The desert safari was absolutely amazing."</p>
+                <p>- Sarah J.</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Professional guides and luxury vehicles. Highly recommended!"</p>
+                <p>- Michael R.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Dubai Premium Tours has been providing exceptional tourism experiences since 2015. We specialize in luxury tours and custom experiences for discerning travelers.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     
